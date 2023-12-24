@@ -14,7 +14,7 @@ COPY pom.xml .
 COPY src ./src
 
 # Build the application
-RUN ./mvnw package -DskipTests \
+RUN chmod +x mvnw && ./mvnw package -DskipTests \
     && mv target/*.jar ./app.jar
 
 # Specify the command to run on container start
