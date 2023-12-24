@@ -15,7 +15,7 @@ docker build -t chat-spring-boot:latest .
 To run the Docker container and expose the Spring Boot application on port 8080, use the following command:
 
 ```bash
-docker build -t chat-spring-boot:latest .
+docker run -p 8080:8080 chat-spring-boot:latest
 ```
 
 ## Note
